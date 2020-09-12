@@ -28,6 +28,7 @@ export const Card = styled.div`
   padding: 22px 32px;
   border-radius: 5px;
   color: ${({ total }: CardProps): string => (total ? '#fff' : '#363F5F')};
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 6px;
 
   header {
     display: flex;
@@ -40,7 +41,10 @@ export const Card = styled.div`
   }
 
   h1 {
+    /* box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 6px; */
     margin-top: 14px;
+    padding: 10px 15px 15px 10px;
+    border-radius: 8px;
     font-size: 36px;
     font-weight: normal;
     line-height: 54px;
@@ -53,6 +57,8 @@ export const TableContainer = styled.section`
   table {
     width: 100%;
     border-spacing: 0 8px;
+    border-radius: 8px;
+    /* box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 6px; */
 
     th {
       color: #969cb3;
